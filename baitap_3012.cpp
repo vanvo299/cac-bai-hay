@@ -5,7 +5,7 @@ b. Xuất số nguyên tố trong mảng
 c. Tính tổng số nguyên tố
 d. Đảo mảng
 e. Sắp xếp mảng theo giảm dần
-f. PP quicksoft tự viết, PP Quicksoft của máy
+f. PP quicksoft tự viết, PP Quicksoft của máy (quicksort bên mục 28TECH)
 */
 #include <stdio.h>
 #include <math.h>
