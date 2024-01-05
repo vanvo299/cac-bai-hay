@@ -69,8 +69,8 @@ void ma_tran_nghich_dao(float a[10][10], float n)
         }
         for (int j = 0; j < n; j++) { // duyệt qua các hàng khác của ma trận
             if (i != j) {
-                float ty_le = a[j][i];// tỷ lệ này được tính dựa trên phần tử hiện cảu ma trận a nằm trên cùng một cột với pivot
-                for (int k = 0; k < n; k++) {
+                float ty_le = a[j][i];// tỷ lệ này được tính dựa trên phần tử hiện của ma trận a nằm trên cùng một cột với pivot
+                for (int k = 0; k < n; k++) { // duyệt qua các cột của ma trận
                     // Tất cả các phần tử trong hàng hiện tại của cả hai ma trận a và b đều trừ đi tỷ lệ nhân với phần tử 
                     // tương ứng trong hàng pivot. Mục đích để biến đổi tất cả các phần tử nằm ngoài đường chéo chính của ma trận a thành 0
                     a[j][k] -= ty_le * a[i][k];
