@@ -1,15 +1,10 @@
-// Bài 3. Giai phuong trinh bac 2
 #include <stdio.h>
 #include <math.h>
-int main() {
-    float a, b, c;
-    printf("Nhap vao cac he so cua phuong trinh bac hai: ");
-    scanf("%f", &a);
-    scanf("%f", &b);
-    scanf("%f", &c);
+
+void giaiPhuongTrinhBacHai(float a, float b, float c) {
     if (a == 0) {
         printf ("Phuong trinh khong ton tai!!!");
-        return 1;
+        return;
     }
     float delta;
     delta = pow(b,2) - (4 * a * c);
@@ -29,5 +24,15 @@ int main() {
     if (delta < 0) {
         printf("Phuong trinh vo nghiem!!");
     }
+}
+
+int main() {
+    float a, b, c;
+    printf("Nhap vao cac he so cua phuong trinh bac hai: ");
+    scanf("%f", &a);
+    scanf("%f", &b);
+    scanf("%f", &c);
+    giaiPhuongTrinhBacHai(a, b, c);
     return 0;
 }
+
